@@ -27,6 +27,15 @@ namespace Calculos
             double t2 = Conversoes.ConverterTemperatura(Conversoes.ConversaoTemperatura.FahrenheitCelsius, d);
             Console.WriteLine($"{c}º Celsius = {t1}º Fahrenheit");
             Console.WriteLine($"{d}º Fahrenheit = {t2}º Celsius");
+            Console.WriteLine("\nInserir distâncias");
+            Console.WriteLine("Inserir distância em Metros");
+            double e = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Inserir temperatura em Milhas");
+            double f = Convert.ToInt32(Console.ReadLine());
+            double t3 = Conversoes.ConverterDistancias(Conversoes.ConversaoDistancia.MetrosMilhas, e);
+            double t4 = Conversoes.ConverterDistancias(Conversoes.ConversaoDistancia.MilhasMetros, f);
+            Console.WriteLine($"{e}º Metros = {t3}º Milhas");
+            Console.WriteLine($"{f}º Milhas = {t4}º Metros");
             Console.ReadKey();
         }
     }
