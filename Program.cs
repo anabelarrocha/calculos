@@ -10,7 +10,7 @@ namespace Calculos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Aplicação Cálculos");
+            Console.WriteLine("Aplicação Cálculos\n");
             Console.WriteLine("Inserir dados");
             Console.WriteLine("Inserir o primeiro valor");
             int a = Convert.ToInt32(Console.ReadLine());
