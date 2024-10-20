@@ -11,12 +11,22 @@ namespace Calculos
         static void Main(string[] args)
         {
             Console.WriteLine("Aplicação Cálculos");
-            Console.WriteLine($"4 + 2 = {Aritmetica.Somar(4,2)}");
-            Console.WriteLine($"4 - 2 = {Aritmetica.Subtrair(4, 2)}");
-            double t1 = Conversoes.ConverterTemperatura(Conversoes.ConversaoTemperatura.CelsiusFahrenheit, 36);
-            double t2 = Conversoes.ConverterTemperatura(Conversoes.ConversaoTemperatura.FahrenheitCelsius, 100);
-            Console.WriteLine($"36º Celsius = {t1}º Fahrenheit");
-            Console.WriteLine($"100º Fahrenheit = {t2}º Celsius");
+            Console.WriteLine("Inserir dados");
+            Console.WriteLine("Inserir o primeiro valor");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Inserir o segundo valor");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{a} + {b} = {Aritmetica.Somar(a,b)}");
+            Console.WriteLine($"{a} - {b} = {Aritmetica.Subtrair(a, b)}");
+            Console.WriteLine("\nInserir temperaturas");
+            Console.WriteLine("Inserir temperatura em Celsius");
+            double c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Inserir temperatura em Fahrenheit");
+            double d = Convert.ToInt32(Console.ReadLine());
+            double t1 = Conversoes.ConverterTemperatura(Conversoes.ConversaoTemperatura.CelsiusFahrenheit, c);
+            double t2 = Conversoes.ConverterTemperatura(Conversoes.ConversaoTemperatura.FahrenheitCelsius, d);
+            Console.WriteLine($"{c}º Celsius = {t1}º Fahrenheit");
+            Console.WriteLine($"{d}º Fahrenheit = {t2}º Celsius");
             Console.ReadKey();
         }
     }
