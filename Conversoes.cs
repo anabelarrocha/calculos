@@ -44,7 +44,7 @@ namespace Calculos
             }
             else if (conversao == ConversaoTemperatura.FahrenheitCelsius)
             {
-                return ((temperatura + 32) / 1.8000);
+                return ((temperatura - 32) / 1.8000);
             }
             return -1;
         }
